@@ -1,7 +1,6 @@
-num_arr = [12, 15, 2, 1, 7, 8, 23, 45, -1, -5]
-
-largest_num = num_arr[0]
+num_arr = [5, 2, 1, 5, 7, 4, 2, 2]
+uniques = []
 for item in num_arr:
-    if item > largest_num:
-        largest_num = item
-print(f"Max: {largest_num}")
+    if item not in uniques:
+        uniques.append(item)
+print(uniques)
